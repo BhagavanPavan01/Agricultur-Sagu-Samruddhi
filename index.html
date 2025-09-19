@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagu Samruddhi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- minimal HTML: keep your existing header/logo, just ensure IDs/classes match -->
+    <header>
+    <div class="header-content container">
+        <div class="logo">
+            <i class="fas fa-leaf"></i>
+            <h1>Sagu Samruddhi</h1>
+        </div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Demo</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>Andhra Pradesh's AI-Powered Farming Assistant</h2>
+            <p>Sagu Samruddhi provides personalized agricultural advice in Telugu, tailored to your specific crops,
+                soil, and local conditions in Andhra Pradesh.</p>
+            <div class="language-toggle">
+                <button class="lang-btn active">Telugu</button>
+                <button class="lang-btn">English</button>
+                <button class="lang-btn">Hindi</button>
+            </div>
+            <a href="#chat" class="btn">Chat Now</a>
+            <a href="#features" class="btn btn-outline">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">How Sagu Samruddhi Helps Farmers</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-user-circle"></i>
+                    <h3>Farmer Profiling</h3>
+                    <p>Create your personalized profile with location, crops, soil type, and farming practices specific
+                        to Andhra Pradesh.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Telugu Interface</h3>
+                    <p>Interact naturally in Telugu through voice or text for easy communication.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h3>Activity Tracking</h3>
+                    <p>Log farming activities, input usage, and pest issues in simple language.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI-Powered Advice</h3>
+                    <p>Get personalized guidance based on your farm's specific conditions and needs.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bell"></i>
+                    <h3>Smart Reminders</h3>
+                    <p>Receive timely alerts for crop operations, weather changes, and market trends.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Local Knowledge</h3>
+                    <p>Access localized information on best practices, pests, and crop calendars for Andhra Pradesh.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo" id="chat">
+        <div class="container">
+            <h2 class="section-title">Chat with Sagu Samruddhi AI</h2>
+            <div class="demo-container">
+                <div class="demo-content">
+                    <h3>Ask Our AI Assistant</h3>
+                    <p>See how Sagu Samruddhi can help you with your farming questions and challenges. Ask about crops,
+                        weather, pests, or best practices in Telugu or English.</p>
+                    <p>Example questions you can try:</p>
+                    <ul>
+                        <li>What are the best crops for my soil type in Guntur?</li>
+                        <li>How to control pests in chili crops organically?</li>
+                        <li>When is the right time to harvest mangoes in Andhra?</li>
+                        <li>What government schemes are available for rice farmers?</li>
+                    </ul>
+                </div>
+                <div class="demo-chat">
+                    <div class="chat-header">
+                        <h3>Sagu Samruddhi AI Assistant</h3>
+                    </div>
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message bot">
+                            <div class="message-content">
+                                నమస్కారం! I'm Sagu Samruddhi, your farming assistant. How can I help you today?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="userInput" placeholder="Type your message in Telugu or English...">
+                        <button id="sendButton"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources">
+        <div class="container">
+            <h2 class="section-title">Andhra Pradesh Farming Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>Crop Calendars</h3>
+                    <p>Regional planting and harvesting schedules for Andhra crops</p>
+                </div>
+                <div class="resource-card">
+                    <h3>Weather Forecast</h3>
+                    <p>Localized weather information for your district</p>
+                </div>
+                <div class="resource-card">
+                    <h3>Market Prices</h3>
+                    <p>Real-time prices in Andhra Pradesh mandis</p>
+                </div>
+                <div class="resource-card">
+                    <h3>Government Schemes</h3>
+                    <p>Subsidies and support programs for Andhra farmers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Sagu Samruddhi</h3>
+                    <p>An AI-powered digital companion for Andhra Pradesh farmers, providing personalized, contextual
+                        agricultural advice in Telugu.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@sagusamruddhi.ap.gov.in</p>
+                    <p>Phone: +91 98765 43210</p>
+                    <p>Address: Agriculture Department, Vijayawada, Andhra Pradesh</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Partners</h3>
+                    <p>Andhra Pradesh Agriculture Department</p>
+                    <p>ANGRAU (Acharya NG Ranga Agricultural University)</p>
+                    <p>Local Rythu Bharosa Kendras</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Sagu Samruddhi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
