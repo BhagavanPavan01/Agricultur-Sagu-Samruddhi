@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sagu Samruddhi</title>
+    <link rel="icon" type="image/png/jpeg"
+        href="https://thumbs.dreamstime.com/b/agriculture-logo-vector-drawing-represents-design-95142925.jpg">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -14,176 +16,297 @@
     <!-- Header -->
     <!-- minimal HTML: keep your existing header/logo, just ensure IDs/classes match -->
     <header>
-    <div class="header-content container">
-        <div class="logo">
-            <i class="fas fa-leaf"></i>
-            <h1>Sagu Samruddhi</h1>
+        <div class="header-content container">
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                <h1>Sagu Samruddhi</h1>
+            </div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Features">Features</a></li>
+                    <li><a href="#Chat">Chat</a></li>
+                    <li><a href="#Resources">Resources</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        
-        <div class="menu-toggle" id="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        
-        <nav id="nav-menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Demo</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    </header>
 
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="Home">
         <div class="container hero-content">
             <h2>Andhra Pradesh's AI-Powered Farming Assistant</h2>
             <p>Sagu Samruddhi provides personalized agricultural advice in Telugu, tailored to your specific crops,
                 soil, and local conditions in Andhra Pradesh.</p>
-            <div class="language-toggle">
+            <!-- <div class="language-toggle">
                 <button class="lang-btn active">Telugu</button>
                 <button class="lang-btn">English</button>
                 <button class="lang-btn">Hindi</button>
-            </div>
-            <a href="#chat" class="btn">Chat Now</a>
-            <a href="#features" class="btn btn-outline">Learn More</a>
+            </div> -->
+            <a href="#Chat" class="btn">Chat Now</a>
+            <a href="#Features" class="btn btn-outline">Learn More</a>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="container">
-            <h2 class="section-title">How Sagu Samruddhi Helps Farmers</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <i class="fas fa-user-circle"></i>
-                    <h3>Farmer Profiling</h3>
-                    <p>Create your personalized profile with location, crops, soil type, and farming practices specific
-                        to Andhra Pradesh.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-comments"></i>
-                    <h3>Telugu Interface</h3>
-                    <p>Interact naturally in Telugu through voice or text for easy communication.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-clipboard-list"></i>
-                    <h3>Activity Tracking</h3>
-                    <p>Log farming activities, input usage, and pest issues in simple language.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-robot"></i>
-                    <h3>AI-Powered Advice</h3>
-                    <p>Get personalized guidance based on your farm's specific conditions and needs.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-bell"></i>
-                    <h3>Smart Reminders</h3>
-                    <p>Receive timely alerts for crop operations, weather changes, and market trends.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-book"></i>
-                    <h3>Local Knowledge</h3>
-                    <p>Access localized information on best practices, pests, and crop calendars for Andhra Pradesh.</p>
-                </div>
+
+
+    <!-- News list -->
+
+    <div class="news-container">
+        <div class="news-ticker" id="newsTicker">
+            <div class="news-item">
+                <span class="news-badge update">Update</span>
+                <span class="news-text">Andhra Pradesh announces new subsidy for organic farming</span>
+                <span class="news-date">Sep 20, 2023</span>
+            </div>
+            <div class="news-item">
+                <span class="news-badge alert">Alert</span>
+                <span class="news-text">Weather advisory: Heavy rainfall expected in coastal districts</span>
+                <span class="news-date">Sep 19, 2023</span>
+            </div>
+            <div class="news-item">
+                <span class="news-badge">News</span>
+                <span class="news-text">Rice prices increase by 12% in Vijayawada market</span>
+                <span class="news-date">Sep 18, 2023</span>
+            </div>
+            <div class="news-item">
+                <span class="news-badge event">Event</span>
+                <span class="news-text">Agricultural workshop in Guntur on September 25</span>
+                <span class="news-date">Sep 17, 2023</span>
+            </div>
+            <div class="news-item">
+                <span class="news-badge update">Update</span>
+                <span class="news-text">New pest-resistant chili variety released for Andhra farmers</span>
+                <span class="news-date">Sep 16, 2023</span>
             </div>
         </div>
-    </section>
 
-    <!-- Demo Section -->
-    <section class="demo" id="chat">
-        <div class="container">
-            <h2 class="section-title">Chat with Sagu Samruddhi AI</h2>
-            <div class="demo-container">
-                <div class="demo-content">
-                    <h3>Ask Our AI Assistant</h3>
-                    <p>See how Sagu Samruddhi can help you with your farming questions and challenges. Ask about crops,
-                        weather, pests, or best practices in Telugu or English.</p>
-                    <p>Example questions you can try:</p>
-                    <ul>
-                        <li>What are the best crops for my soil type in Guntur?</li>
-                        <li>How to control pests in chili crops organically?</li>
-                        <li>When is the right time to harvest mangoes in Andhra?</li>
-                        <li>What government schemes are available for rice farmers?</li>
-                    </ul>
-                </div>
-                <div class="demo-chat">
-                    <div class="chat-header">
-                        <h3>Sagu Samruddhi AI Assistant</h3>
+
+
+        <!-- Features Section -->
+        <section class="features" id="Features">
+            <div class="container">
+                <h2 class="section-title">How Sagu Samruddhi Helps Farmers</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-user-circle"></i>
+                        <h3>Farmer Profiling</h3>
+                        <p>Create your personalized profile with location, crops, soil type, and farming practices
+                            specific
+                            to Andhra Pradesh.</p>
                     </div>
-                    <div class="chat-messages" id="chatMessages">
-                        <div class="message bot">
-                            <div class="message-content">
-                                నమస్కారం! I'm Sagu Samruddhi, your farming assistant. How can I help you today?
+                    <div class="feature-card">
+                        <i class="fas fa-comments"></i>
+                        <h3>Telugu Interface</h3>
+                        <p>Interact naturally in Telugu through voice or text for easy communication.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-clipboard-list"></i>
+                        <h3>Activity Tracking</h3>
+                        <p>Log farming activities, input usage, and pest issues in simple language.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI-Powered Advice</h3>
+                        <p>Get personalized guidance based on your farm's specific conditions and needs.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-bell"></i>
+                        <h3>Smart Reminders</h3>
+                        <p>Receive timely alerts for crop operations, weather changes, and market trends.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-book"></i>
+                        <h3>Local Knowledge</h3>
+                        <p>Access localized information on best practices, pests, and crop calendars for Andhra Pradesh.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demo Section -->
+        <section class="demo" id="Chat">
+            <div class="container">
+                <h2 class="section-title">Chat with Sagu Samruddhi AI</h2>
+                <div class="demo-container">
+                    <div class="demo-content">
+                        <h3>Ask Our AI Assistant</h3>
+                        <p>See how Sagu Samruddhi can help you with your farming questions and challenges. Ask about
+                            crops,
+                            weather, pests, or best practices in Telugu or English.</p>
+                        <p>Example questions you can try:</p>
+                        <ul>
+                            <li>What are the best crops for my soil type in Guntur?</li>
+                            <li>How to control pests in chili crops organically?</li>
+                            <li>When is the right time to harvest mangoes in Andhra?</li>
+                            <li>What government schemes are available for rice farmers?</li>
+                        </ul>
+                    </div>
+                    <div class="demo-chat">
+                        <div class="chat-header">
+                            <h3>Sagu Samruddhi AI Assistant</h3>
+                        </div>
+                        <div class="chat-messages" id="chatMessages">
+                            <div class="message bot">
+                                <div class="message-content">
+                                    నమస్కారం! I'm Sagu Samruddhi, your farming assistant. How can I help you today?
+                                </div>
                             </div>
                         </div>
+                        <div class="chat-input">
+                            <input type="text" id="userInput" placeholder="Type your message in Telugu or English...">
+                            <button id="sendButton"><i class="fas fa-paper-plane"></i></button>
+                        </div>
                     </div>
-                    <div class="chat-input">
-                        <input type="text" id="userInput" placeholder="Type your message in Telugu or English...">
-                        <button id="sendButton"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="resources" id="Resources">
+            <div class="container">
+                <h2 class="section-title">Andhra Pradesh Farming Resources</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <i class="fas fa-seedling card-icon"></i>
+                            <h3>Crop Calendars</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Regional planting and harvesting schedules for Andhra crops including rice, chili,
+                                cotton,
+                                and mango. Plan your agricultural activities with our season-specific guidance.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://garudimplements.com/indian-crop-calendar-month-wise/"
+                                class="resource-link">View Calendar</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <i class="fas fa-cloud-sun card-icon"></i>
+                            <h3>Weather Forecast</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Localized weather information for your district with 7-day forecasts, rainfall
+                                predictions,
+                                and agricultural advisories. Essential for planning irrigation and harvesting.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://www.accuweather.com/en/in/ap/andhra-pradesh-weather"
+                                class="resource-link">Check Weather</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <i class="fas fa-chart-line card-icon"></i>
+                            <h3>Market Prices</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Real-time prices in Andhra Pradesh mandis for all major crops. Compare prices across
+                                different markets to get the best value for your produce.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://vegetablemarketprice.com/market/andhrapradesh/today"
+                                class="resource-link">View
+                                Prices</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <i class="fas fa-hand-holding-usd card-icon"></i>
+                            <h3>Government Schemes</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Subsidies and support programs for Andhra farmers including Rythu Bharosa, crop
+                                insurance,
+                                and equipment subsidies. Learn how to apply and eligibility criteria.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://schemes.vikaspedia.in/viewcontent/schemesall/schemes-for-farmers?lgn=en"
+                                class="resource-link">Explore Schemes</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Expert Consultation -->
+                    <div class="resource-card featured">
+                        <div class="featured-badge"></div>
+                        <div class="card-header">
+                            <i class="fas fa-user-tie card-icon"></i>
+                            <h3>Expert Consultation</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Connect with agricultural experts for personalized advice on crop management, pest
+                                control,
+                                and soil health. Schedule virtual or in-person consultations with specialists.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://www.justdial.com/Vijayawada/Agricultural-Consultants/nct-10009443"
+                                class="resource-link">Book Consultation</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Digital Farming Tools -->
+                    <div class="resource-card">
+                        <div class="card-header">
+                            <i class="fas fa-tablet-alt card-icon"></i>
+                            <h3>Digital Farming Tools</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Access our suite of digital tools including crop disease identification, irrigation
+                                calculators, and yield estimators. Designed specifically for Andhra Pradesh farming
+                                conditions.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://www.yara.com/digital-farming/our-digital-farming-solutions/"
+                                class="resource-link">Explore Tools</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Resources Section -->
-    <section class="resources">
-        <div class="container">
-            <h2 class="section-title">Andhra Pradesh Farming Resources</h2>
-            <div class="resources-grid">
-                <div class="resource-card">
-                    <h3>Crop Calendars</h3>
-                    <p>Regional planting and harvesting schedules for Andhra crops</p>
+        <!-- Footer -->
+        <footer>
+            <div class="container" id="Contact">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>About Sagu Samruddhi</h3>
+                        <p>An AI-powered digital companion for Andhra Pradesh farmers, providing personalized,
+                            contextual
+                            agricultural advice in Telugu.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <p>Email: info@sagusamruddhi.ap.gov.in</p>
+                        <p>Phone: +91 98765 43210</p>
+                        <p>Address: Agriculture Department, Vijayawada, Andhra Pradesh</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Partners</h3>
+                        <p>Andhra Pradesh Agriculture Department</p>
+                        <p>ANGRAU (Acharya NG Ranga Agricultural University)</p>
+                        <p>Local Rythu Bharosa Kendras</p>
+                    </div>
                 </div>
-                <div class="resource-card">
-                    <h3>Weather Forecast</h3>
-                    <p>Localized weather information for your district</p>
-                </div>
-                <div class="resource-card">
-                    <h3>Market Prices</h3>
-                    <p>Real-time prices in Andhra Pradesh mandis</p>
-                </div>
-                <div class="resource-card">
-                    <h3>Government Schemes</h3>
-                    <p>Subsidies and support programs for Andhra farmers</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>About Sagu Samruddhi</h3>
-                    <p>An AI-powered digital companion for Andhra Pradesh farmers, providing personalized, contextual
-                        agricultural advice in Telugu.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact Us</h3>
-                    <p>Email: info@sagusamruddhi.ap.gov.in</p>
-                    <p>Phone: +91 98765 43210</p>
-                    <p>Address: Agriculture Department, Vijayawada, Andhra Pradesh</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Partners</h3>
-                    <p>Andhra Pradesh Agriculture Department</p>
-                    <p>ANGRAU (Acharya NG Ranga Agricultural University)</p>
-                    <p>Local Rythu Bharosa Kendras</p>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Sagu Samruddhi. All rights reserved.</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 Sagu Samruddhi. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
 </body>
 
