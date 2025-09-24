@@ -204,6 +204,9 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
+
+
+
 .btn {
     display: inline-block;
     background: var(--accent);
@@ -235,7 +238,7 @@ nav a:hover {
 /*   News section   */
 
 .news-container {
-    padding: 20px;
+    padding: 3px;
     position: relative;
     overflow: hidden;
     background: #f9f9f9;
@@ -299,6 +302,27 @@ nav a:hover {
     font-size: 0.9rem;
     white-space: nowrap;
 }
+
+.news-link,
+.news-link:visited,
+.news-link:active,
+.news-link:focus {
+    text-decoration: none;
+    /* no underline in any state */
+    color: inherit;
+    /* keep same text color */
+    outline: none;
+    /* remove focus outline */
+}
+
+.news-link:hover {
+    text-decoration: underline;
+    /* optional: underline only on hover */
+    color: #0077cc;
+    /* optional: hover color */
+}
+
+
 
 @keyframes ticker-scroll {
     0% {
@@ -640,6 +664,294 @@ nav a:hover {
     }
 }
 
+
+
+
+/* ================Technologies Section Styles */
+
+
+
+.tech-section {
+    padding: 80px 0;
+    background: linear-gradient(to bottom, #f8fff8, #ffffff);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c5530;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tech Overview */
+.tech-overview {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.tech-intro {
+    flex: 1;
+    min-width: 300px;
+}
+
+.tech-intro h3 {
+    font-size: 1.8rem;
+    color: #2c5530;
+    margin-bottom: 20px;
+}
+
+.tech-intro p {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.tech-stats {
+    display: flex;
+    gap: 20px;
+}
+
+.tech-stat {
+    text-align: center;
+    padding: 15px;
+    background: #e8f5e9;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.tech-stat-number {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c5530;
+}
+
+.tech-stat-label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.tech-visual {
+    flex: 1;
+    min-width: 300px;
+}
+
+.tech-hero-image {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.tech-hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Tech Features */
+.tech-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.tech-feature {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.tech-feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.tech-icon {
+    font-size: 2.5rem;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+.tech-feature h4 {
+    color: #2c5530;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.tech-feature p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.tech-benefits {
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+}
+
+.tech-benefits li {
+    padding: 5px 0;
+    color: #555;
+    position: relative;
+    padding-left: 20px;
+}
+
+.tech-benefits li:before {
+    content: "✓";
+    color: #4caf50;
+    position: absolute;
+    left: 0;
+}
+
+/* Tech in Action */
+.tech-action {
+    margin-bottom: 60px;
+}
+
+.tech-action h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c5530;
+    margin-bottom: 40px;
+}
+
+.action-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.action-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.step-number {
+    background: #2c5530;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.step-content h4 {
+    color: #2c5530;
+    margin-bottom: 10px;
+}
+
+.step-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Tech CTA */
+.tech-cta {
+    background: linear-gradient(135deg, #2c5530, #4caf50);
+    color: white;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.cta-content h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    background: white;
+    color: #2c5530;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #e8f5e9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tech-overview {
+        flex-direction: column;
+    }
+
+    .tech-stats {
+        flex-direction: column;
+    }
+
+    .action-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-cta {
+        padding: 30px 20px;
+    }
+}
+
+/* Animation for icons */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.tech-feature:hover .tech-icon {
+    animation: float 2s ease-in-out infinite;
+}
+
+
+
+
+
+
 /* Footer */
 footer {
     background: var(--dark);
@@ -682,4 +994,73 @@ footer {
     .demo-container {
         flex-direction: column;
     }
+}
+
+
+
+
+/* ==================  Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 15px 20px 0 0;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #2c5530;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #2c5530, #4caf50);
+    color: white;
+    padding: 30px;
+    border-radius: 15px 15px 0 0;
+}
+
+.demo-form {
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
